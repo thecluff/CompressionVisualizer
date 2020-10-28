@@ -1,0 +1,59 @@
+body{
+  font-family: 'Roboto';
+  font-size:100%;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". .";
+}
+
+#wrap{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:auto;
+  margin-right:auto;
+  transform:translateY(-50%) translateX(-50%); 
+  width:100%;
+  height:100%;
+}
+
+#controls{
+  float:left;
+  position:relative;
+  background:#ddd;
+  padding:20px;
+}
+
+#controls > input{
+  border-style:none;
+  display:block;
+  font-size:150%;
+  margin-bottom:20px;
+  width:200px;
+  padding:5px;
+  background:white;
+  outline:2px solid #aaa;
+}
+
+#waveform{
+  border:4px solid #ddd;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #controls{
+    max-height:100vh;
+    overflow:scroll;
+    font-size:75%;
+  }
+  #controls > input {
+    font-size:100%;
+    margin-bottom: 5px;
+    zoom:0.7;
+  }
+}
