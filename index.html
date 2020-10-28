@@ -13,6 +13,8 @@
   <title>HTML Audio Compressor Tutorial</title>
 </head>
 <body>
+
+<br />
 <div id="wrap"class="grid-container">
 <div id="controls">
   Threshold: <input type="range" id="thresh_text" value="-12" min="-60" max="0" oninput="compress()"></input>
@@ -20,6 +22,9 @@
   Attack:<input type="range" id="atk_text" value="1" oninput="compress()"></input>
   Release:<input type="range" id="rel_text" value="20" oninput="compress()"></input>
   Makeup:<input type="number" id="gain_text" value="0" oninput="compress()" min="0" max="24"></input>
+  <div>
+    <p>(I didn't make this) All credit goes to <a href="https://codepen.io/animalsnacks">Zach Hughes!</a></p>
+  </div>
 </div>
 <canvas id="waveform" width="900px" height="500px"></canvas>
 </div>
